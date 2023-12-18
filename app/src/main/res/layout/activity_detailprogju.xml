@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".detailprogju_activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="67dp"
+                    android:background="@drawable/wave"
+                    android:minHeight="?attr/actionBarSize"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <TextView
+            android:id="@+id/lblprogju"
+            android:layout_width="355dp"
+            android:layout_height="98dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="25dp"
+            android:gravity="center"
+            android:text="Teknik Komputer dan Jaringan"
+            android:textSize="25dp"
+            android:lineSpacingExtra="3dp"
+            android:fontFamily="@font/poetsen_one"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/deskripsi"
+            android:layout_width="wrap_content"
+            android:layout_height="355dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="8dp"
+            app:strokeColor="@color/colorPrimaryDark"
+            app:strokeWidth="2dp">
+
+            <TextView
+                android:layout_width="238dp"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/poetsen_one"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="20dp"
+                android:text="Deskripsi Jurusan"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="70dp"
+                android:fontFamily="@font/songmyung"
+                android:lineSpacingExtra="10dp"
+                android:paddingHorizontal="16dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur assumenda atque corporis,cum, deleniti dolore\ndoloremque dolores eaque est ex better up "
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/detail1"
+            android:layout_width="417dp"
+            android:layout_height="295dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="8dp"
+            app:strokeColor="@color/colorPrimaryDark"
+            app:strokeWidth="2dp">
+
+            <TextView
+                android:layout_width="238dp"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/poetsen_one"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="20dp"
+                android:text="Prospek Kerja:"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="70dp"
+                android:fontFamily="@font/songmyung"
+                android:lineSpacingExtra="10dp"
+                android:paddingHorizontal="16dp"
+                android:text="\t1. SMK Negeri 1 Batam\n\t2. SMK Negeri 3 Batam\n\t3. dll\n\t4. juga dll"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/detail2"
+            android:layout_width="417dp"
+            android:layout_height="195dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="8dp"
+            app:strokeColor="@color/colorPrimaryDark"
+            app:strokeWidth="2dp">
+
+            <TextView
+                android:layout_width="238dp"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/poetsen_one"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="20dp"
+                android:text="Tersedia di:"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="68dp"
+                android:fontFamily="@font/songmyung"
+                android:lineSpacingExtra="10dp"
+                android:paddingHorizontal="18dp"
+                android:text="\t1. SMK Negeri 1 Batam\n\t2. SMK Negeri 3 Batam\n\t3. dll"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+
+</ScrollView>

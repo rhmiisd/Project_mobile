@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    tools:context=".login_activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarHeader"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:background="@drawable/header"
+        android:elevation="5dp"
+        android:fitsSystemWindows="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arbutus"
+            android:text="LOGIN"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:theme="@style/Theme.MaterialComponents.Light"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv"
+            android:layout_width="match_parent"
+            android:layout_height="341dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:strokeColor="@color/colorPrimaryDark"
+            app:strokeWidth="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="335dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtLoginUser"
+                    android:layout_width="346dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp">
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="327dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:drawableStart="@drawable/ic_email"
+                        android:hint="     Masukkan Email"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:strokeColor="@color/colorPrimaryDark" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtLoginPass"
+                    android:layout_width="346dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="327dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:drawableStart="@drawable/ic_password"
+                        android:hint="     Password"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/masuk"
+                    android:layout_width="200dp"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center|bottom"
+                    android:layout_margin="25dp"
+                    android:fontFamily="@font/arbutus"
+                    android:text="Login"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:backgroundTint="@color/blok"
+                    app:cornerRadius="50dp" />
+
+                <Button
+                    android:id="@+id/ke_daftar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|end"
+                    android:layout_marginEnd="10dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/not_register"
+                    android:textAllCaps="false"
+                    android:textColor="#92A7AB"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarHeaderdown"
+        android:layout_width="wrap_content"
+        android:layout_height="185dp"
+        android:background="@drawable/headerbawah"
+        android:elevation="5dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:elevation="5dp"
+        android:background="@drawable/header"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="250dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="355dp"
+                android:layout_height="224dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="3dp"
+                app:strokeColor="@color/colorPrimaryDark"
+                app:strokeWidth="3dp">
+
+                <LinearLayout
+                    android:layout_width="361dp"
+                    android:layout_height="202dp"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    app:strokeColor="@color/colorPrimaryDark">
+
+                    <TextView
+                        android:id="@+id/idUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/arbutus"
+                        android:gravity="center_vertical"
+                        android:layout_marginStart="32dp"
+                        android:text="PROFILE USER"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/idSewa"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/poetsen_one"
+                        android:text="Nama :"
+                        android:textColor="@android:color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/lblName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtName"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/poetsen_one"
+                        android:text="Rahmi Sefrial dayanti"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lblName"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/poetsen_one"
+                        android:text="Email :"
+                        android:textColor="@android:color/black"
+
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/lblEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtEmail"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/poetsen_one"
+                        android:text="rahmii2209@gmail.com"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarHeaderdown"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginTop="95dp"
+        android:background="@drawable/headerbawah"
+        android:elevation="5dp"
+        android:fitsSystemWindows="true" />
+
+</LinearLayout>

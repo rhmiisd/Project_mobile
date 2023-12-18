@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarHeader"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:background="@drawable/header"
+        android:elevation="5dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arbutus"
+            android:text="REGISTER"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:strokeColor="@color/colorPrimaryDark"
+            app:strokeWidth="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="356dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <EditText
+                        android:id="@+id/reg_nama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:drawableStart="@drawable/ic_person"
+                        android:hint="     Masukkan Nama"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtLoginUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <EditText
+                        android:id="@+id/reg_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:drawableStart="@drawable/ic_email"
+                        android:hint="     Masukkan Email"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtLoginPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/reg_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:drawableStart="@drawable/ic_password"
+                        android:hint="     Password"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/register"
+                    android:layout_width="200dp"
+                    android:layout_height="61dp"
+                    android:layout_gravity="center|bottom"
+                    android:layout_margin="25dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/arbutus"
+                    android:text="Register"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:backgroundTint="@color/colorPrimaryDark"
+                    app:cornerRadius="50dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ke_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="10dp"
+                android:background="@android:color/transparent"
+                android:text="@string/after_register"
+                android:textAllCaps="false"
+                android:textColor="#92A7AB"
+                android:textSize="14sp"
+                app:cornerRadius="50dp" />
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="10dp"
+        android:text="© School Apps by Rahmi Sefrial Dayanti 2023"
+        android:textColor="#92A7AB"
+        android:textSize="12sp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarHeaderdown"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:background="@drawable/headerbawah"
+        android:elevation="5dp"
+        android:fitsSystemWindows="true" />
+
+
+</LinearLayout>

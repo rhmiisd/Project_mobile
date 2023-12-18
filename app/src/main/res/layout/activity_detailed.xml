@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    tools:context=".detailed_activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <!-- Your Toolbar -->
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="67dp"
+                    android:background="@drawable/wave"
+                    android:minHeight="?attr/actionBarSize"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardImage"
+            android:layout_width="320dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="8dp">
+
+            <ImageView
+                android:id="@+id/detailImage"
+                android:layout_width="162dp"
+                android:layout_height="164dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logosmk3" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Sekolah:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SMK NEGERI 3 BATAM"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"
+            android:id="@+id/detailTime"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Kepala Sekolah:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/detailkepsek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DRS. REFIO, M.PD."
+            android:layout_marginStart="10dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visi dan Misi:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/visi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VISI"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/detailvisi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Menghasilkan lulusan yang berkarakter,
+            berkualitas, dan profesional pada tahun 2025"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/misi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MISI"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/detailmisi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/misi"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ekstrakulikuler:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/detailpk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="isinya ekstrakuler"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No.HP:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/detailnohp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="no hp sekolah"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/detaiemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="email sekolah"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Website:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/detaiweb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="website sekolah"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lokasi:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/detaillokasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="titik koordinat/alamat lengkap"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Akreditas:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="titik koordinat/alamat lengkap"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lokasi:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/de"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="titik koordinat/alamat lengkap"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lokasi:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/det"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="titik koordinat/alamat lengkap"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
